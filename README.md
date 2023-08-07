@@ -2,6 +2,20 @@
 # Collections for GarlicOS! 
 now you can obsessively make cool little game collections! Huzzah!
 
+## What is it?
+Basically, it creates a new "system" that has a bunch of names of "Collection"s.
+Pressing the collection replaces the current favorites with the contents of the selected collection.
+(at first they will be empty, you can fill them up by favoriting new games)
+Selecting a new one also autosaves the currently active one (you can undo this if you did it by accident)
+
+So, let's say you want to make a collection for games you have beaten.
+You would:
+- tap the "Beaten" collection from the new Collections system icon
+>this would empty the favs you have rn, since you havent put anything into the "Beaten" collection yet. (don't worry, your current favorites were saved into the "Favorites" collection.)
+- favorite the games you have beaten, this puts them in the collection.
+- now you can switch the collection, let's say you want your old favs back, then press the "Favorites" collection and now they are back.
+- as you can guess, pressing "Beaten" will bring back the ones you chose during this tutorial.
+
 # Installation
 1. copy folders to the root of the SD card
 2. open up /CFW/config/coremapping.json
@@ -9,10 +23,6 @@ now you can obsessively make cool little game collections! Huzzah!
     "COLLECTIONS": "/bin/sh",
 4. (optional) backup the /CFW/retroarch/.retroarch/content_favorites.lpl file in case i made a mistake
 You're done!
-
-# Usage
-pressing a collection will autosave the current one and replace the favorites with the selected one
-(your current favs will autosave to the "Favorites" collection when you first use it.)
 
 # Adding New Collections
 1. copy & paste any collection file (don't touch the "Coll" folder)
