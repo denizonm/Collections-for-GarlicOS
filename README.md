@@ -24,7 +24,9 @@ You would:
 4. (optional) backup the /CFW/retroarch/.retroarch/content_favorites.lpl file in case i made a mistake
 You're done!
 
-# Adding New Collections
+# Adding New Collections and Renaming
+>It comes with a bunch of common names for collections like "Beaten" and "To Play". You can rename them to make yours.
+## As for adding new ones:
 1. copy & paste any collection file (don't touch the "Coll" folder)
 2. Rename copy to the desired collection name
 That's it!
