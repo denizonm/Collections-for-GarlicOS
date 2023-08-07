@@ -1,4 +1,4 @@
-# Collections for GarlicOS!
+# Collections for GarlicOS! é[[https://raw.githubusercontent.com/denizonm/Collections-for-GarlicOS/main/CFW/skin/system/COLLECTIONS.png]]
 now you can obsessively make cool little game collections! Huzzah!
 
 # Installation
