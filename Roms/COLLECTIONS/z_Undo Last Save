@@ -1,0 +1,8 @@
+#!/bin/sh
+cd /mnt/mmc/Coll
+
+CC=$(cat ./PREV | awk -F/ '{print $NF}')
+
+rm ./$CC
+cp ./$CC.bak ./$CC
+
