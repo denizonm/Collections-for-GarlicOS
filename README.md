@@ -1,6 +1,6 @@
-# Collections for GarlicOS! ![a](https://raw.githubusercontent.com/denizonm/Collections-for-GarlicOS/main/CFW/skin/system/COLLECTIONS.png)
+# Collections for GarlicOS! 
 now you can obsessively make cool little game collections! Huzzah!
-
+![a](https://raw.githubusercontent.com/denizonm/Collections-for-GarlicOS/main/CFW/skin/system/COLLECTIONS.png)
 # Installation
 1. copy folders to the root of the SD card
 2. open up /CFW/config/coremapping.json
