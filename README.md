@@ -16,6 +16,9 @@ You would:
 - now you can switch the collection, let's say you want your old favs back, then press the "Favorites" collection and now they are back.
 - as you can guess, pressing "Beaten" will bring back the ones you chose during this tutorial.
 
+### Allow this extremely crunchy gif to explain!
+![crn](https://github.com/denizonm/Collections-for-GarlicOS/blob/main/ezgif-3-7c09519935.gif?raw=true)
+
 # Installation
 1. copy folders to the root of the SD card
 2. open up /CFW/config/coremapping.json
