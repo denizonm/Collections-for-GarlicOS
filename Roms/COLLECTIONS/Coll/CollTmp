@@ -22,4 +22,9 @@ rm ./PREV
 touch ./PREV
 echo $CC >> ./PREV
 
+if [ -f ./renameMode ]; then
+    RTX="    \"favorites-label\": \"$NM\","
+    sed -i /mnt/mmc/CFW/lang/* -e "7s!.*!$RTX!"
+fi
+
 echo 0 > /sys/class/power_supply/battery/moto
