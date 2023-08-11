@@ -1,4 +1,5 @@
 #!/bin/sh
+echo 35 > /sys/class/power_supply/battery/moto
 cd $(dirname "$0")/Coll
 
 CC=$(cat ./CURRENT | awk -F/ '{print $NF}')
@@ -20,3 +21,4 @@ echo $NM >> ./CURRENT
 rm ./PREV
 touch ./PREV
 echo $CC >> ./PREV
+echo 0 > /sys/class/power_supply/battery/moto
