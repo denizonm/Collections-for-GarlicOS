@@ -1,0 +1,25 @@
+#!/bin/sh
+echo 35 > /sys/class/power_supply/battery/moto
+cd $(dirname "$0")/Coll
+
+CC=$(cat ./CURRENT | awk -F/ '{print $NF}')
+NM=$(echo "$0" | awk -F/ '{print $NF}')
+
+mv /mnt/mmc/CFW/retroarch/.retroarch/content_favorites.lpl /mnt/mmc/CFW/retroarch/.retroarch/content_favorites.lpl.bak
+
+touch "./$CC"
+cp "./$CC" "./$CC.bak"
+cp /mnt/mmc/CFW/retroarch/.retroarch/content_favorites.lpl.bak "./$CC"
+
+touch "./$NM"
+cp "./$NM" /mnt/mmc/CFW/retroarch/.retroarch/content_favorites.lpl
+
+rm ./CURRENT
+touch ./CURRENT
+echo $NM >> ./CURRENT
+
+rm ./PREV
+touch ./PREV
+echo $CC >> ./PREV
+
+echo 0 > /sys/class/power_supply/battery/moto
