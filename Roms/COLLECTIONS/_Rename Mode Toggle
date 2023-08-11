@@ -1,0 +1,11 @@
+#!/bin/sh
+echo 35 > /sys/class/power_supply/battery/moto
+cd $(dirname "$0")/Coll
+
+if [ -f ./renameMode ]; then
+    rm ./renameMode
+else
+    touch ./renameMode
+fi
+
+echo 0 > /sys/class/power_supply/battery/moto
