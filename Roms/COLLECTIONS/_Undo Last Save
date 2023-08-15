@@ -1,5 +1,5 @@
 #!/bin/sh
-cd /mnt/mmc/Coll
+cd $(dirname "#0")
 
 CC=$(cat ./PREV | awk -F/ '{print $NF}')
 
