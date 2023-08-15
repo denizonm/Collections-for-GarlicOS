@@ -4,8 +4,8 @@ mkdir /mnt/mmc/Roms/COLLECTIONS
 mkdir /mnt/mmc/Roms/COLLECTIONS/Coll
 cd /mnt/mmc/Roms/COLLECTIONS
 
-cp /mnt/mmc/Saves/CurrentProfile/lists/content_history.lpl "./Coll/Recents_$(date +\%y\%m\%d\%h\%s)"
-cp ./Coll/CollTmp "./Recents_$(date +\%y\%m\%d\%h\%s)"
+cp /mnt/mmc/Saves/CurrentProfile/lists/content_history.lpl "./Coll/Recents_$(date +\%F-\%H\%M)"
+cp ./Coll/CollTmp "./Recents_$(date +\%F-\%H\%M)"
 
 
 echo 0 > /sys/class/power_supply/battery/moto
